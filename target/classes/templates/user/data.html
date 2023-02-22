@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Login</title>
+ <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+ <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<br/><h2 class="h3 mb-3 font-weight-normal text-center">Covid Data: </h2>
+	<br/><p>Email: <span sec:authentication="name"></span></p>
+    <p>Role: <span sec:authentication="authorities"></span></p>
+    
+    <h3> View the Covid Country Data</h3>
+    <form action="/countries/parse" method="get">
+    <button type="submit">View Data</button></form>
+    
+    <!--Update the data--->
+    
+    <!--Save the data-->
+    
+    <!--Delete the data-->
+</body>
+</html>

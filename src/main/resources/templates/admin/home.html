@@ -1,0 +1,20 @@
+<!--admin/home.html-->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>User Home Page</title>
+ <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+ <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.min.css">
+</head>
+<body>
+  <h2 class="h3 mb-3 font-weight-normal text-center">Welcome to your Home Page!</h2>
+  <p>Logged as: <span sec:authentication="name"></span></p>
+  <p>Has role: <span sec:authentication="authorities"></span></p>
+  <p> As an admin user, you are able to add, update and delete country information stored in the system. </p>
+  <p><a th:href="@{/}">Covid Information Portal</a></p>
+  <p><a th:href="@{/data}">View the covid data files</a></p>
+  <p><a th:href="@{/logout}">Log out</a></p>
+</body>
+</html>
